@@ -5,8 +5,10 @@ namespace FundamentalAPI.Model
     public class Student
     {
         public int Id { get; set; }
-        
-        [MaxLength(10, ErrorMessage = "The {0} value cannot exceed {1} characters. ")]
         public string Name { get; set; }
+        public int Age { get; set; }
+        public string Address { get; set; }
+        public double GPA { get; set; }
+
     }
 }
